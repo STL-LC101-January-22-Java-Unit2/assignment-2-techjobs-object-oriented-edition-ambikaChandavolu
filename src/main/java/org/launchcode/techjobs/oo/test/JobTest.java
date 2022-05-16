@@ -2,6 +2,7 @@ package org.launchcode.techjobs.oo.test;
 
 import static org.junit.Assert.*;
 
+import netscape.javascript.JSObject;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 import org.junit.Assert;
@@ -60,6 +61,12 @@ public class JobTest {
         assertTrue(job.toString().charAt(job.toString().length()-1) == '\n');
         Assert.assertEquals('\n', '\n');
         */
+    }
+
+    @Test
+    public void testToStringContainsCorrectLabelsAndData(){
+        Job job = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+        assertEquals("\nID: " + job.getId() + "\nName: Product tester\nEmployer: ACME\nLocation: Desert\nPosition Type: Quality control\nCore Competency: Persistence\n", job.toString());
     }
 
 
