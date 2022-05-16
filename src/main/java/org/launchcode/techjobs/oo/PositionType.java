@@ -16,7 +16,7 @@ public class PositionType {
     public PositionType(String value) {
         this();
         this.value = value;
-        System.out.println("Value is : " + value);
+        //System.out.println("Value is : " + value);
     }
 
     // TODO: Add a custom toString() method that returns the data stored in 'value'.
