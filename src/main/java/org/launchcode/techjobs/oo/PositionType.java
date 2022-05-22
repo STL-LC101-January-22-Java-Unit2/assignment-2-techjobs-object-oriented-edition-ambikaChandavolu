@@ -14,10 +14,10 @@ public class PositionType extends JobField {
     }
 
     public PositionType(String value) {
-       // this();
-        //this.value = value;
+        this();
+        this.value = value;
+        //super(value);
         //System.out.println("Value is : " + value);
-        super(value);
     }
 
     // TODO: Add a custom toString() method that returns the data stored in 'value'.
