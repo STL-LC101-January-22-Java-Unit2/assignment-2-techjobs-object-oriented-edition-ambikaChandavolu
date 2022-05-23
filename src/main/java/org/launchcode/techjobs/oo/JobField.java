@@ -18,7 +18,7 @@ public abstract class JobField {
    }
 
    //getters and setters
-/*
+
 @Override
 public boolean equals(Object o){
     if (this == o) return true;
@@ -26,7 +26,7 @@ public boolean equals(Object o){
     JobField jobField = (JobField) o;
     return id == jobField.id && value.equals(jobField.value);
      }
-*/
+
      @Override
     public int hashCode(){ return  Objects.hash(id); }
 
