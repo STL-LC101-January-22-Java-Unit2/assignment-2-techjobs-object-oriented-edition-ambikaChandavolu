@@ -35,8 +35,8 @@ public class JobTest {
         assertTrue("ACME".equals(job.getEmployer().getValue()));
 
         assertEquals("Desert", job.getLocation().getValue());
-        //assertTrue(job.getLocation() instanceof Location);
-        assertTrue("Desert".equals(job.getLocation().getValue()));
+        assertTrue(job.getLocation() instanceof Location);
+        //assertTrue("Desert".equals(job.getLocation().getValue()));
 
         assertEquals("Quality control", job.getPositionType().getValue());
         assertTrue(job.getPositionType() instanceof PositionType);

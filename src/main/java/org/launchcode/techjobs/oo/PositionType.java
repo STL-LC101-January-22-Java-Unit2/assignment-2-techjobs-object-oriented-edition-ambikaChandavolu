@@ -35,10 +35,10 @@ public class PositionType extends JobField {
         PositionType pt = (PositionType) o;
         return id == pt.id;
     }
-*/
+
     @Override
     public int hashCode(){ return Objects.hash(id);  }
-
+*/
     // Getters and Setters:
 /*
     public int getId() {
