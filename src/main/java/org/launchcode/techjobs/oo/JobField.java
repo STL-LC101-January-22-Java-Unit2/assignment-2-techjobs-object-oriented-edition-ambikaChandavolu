@@ -28,7 +28,7 @@ public boolean equals(Object o){
      }
 */
      @Override
-    public int hashCode(){ return  Objects.hash(value, id); }
+    public int hashCode(){ return  Objects.hash(id); }
 
     public int getId(){ return id; }
 
