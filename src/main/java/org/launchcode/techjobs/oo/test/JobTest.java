@@ -1,13 +1,13 @@
 package org.launchcode.techjobs.oo.test;
 
-import static org.junit.Assert.*;
 
 import netscape.javascript.JSObject;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
-import org.junit.Assert;
+//import org.junit.Assert;
 import org.junit.Test;
 import org.launchcode.techjobs.oo.*;
+import static org.junit.Assert.*;
 
 /**
  * Created by LaunchCode
@@ -27,19 +27,24 @@ public class JobTest {
         Job job = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
 
         assertEquals("Product tester", job.getName());
-        assertTrue(job.getName() instanceof String);
+        //assertTrue(job.getName() instanceof String);
+        assertTrue("Product tester".equals(job.getName()));
 
         assertEquals("ACME", job.getEmployer().getValue());
-        assertTrue(job.getEmployer() instanceof Employer);
+        //assertTrue(job.getEmployer() instanceof Employer);
+        assertTrue("ACME".equals(job.getEmployer().getValue()));
 
         assertEquals("Desert", job.getLocation().getValue());
-        assertTrue(job.getLocation() instanceof Location);
+        //assertTrue(job.getLocation() instanceof Location);
+        assertTrue("Desert".equals(job.getLocation().getValue()));
 
         assertEquals("Quality control", job.getPositionType().getValue());
         assertTrue(job.getPositionType() instanceof PositionType);
+        //assertTrue("Quality Control".equals(job.getPositionType().getValue()));
 
         assertEquals("Persistence", job.getCoreCompetency().getValue());
-        assertTrue(job.getCoreCompetency() instanceof CoreCompetency);
+        //assertTrue(job.getCoreCompetency() instanceof CoreCompetency);
+        assertTrue("Persistence".equals(job.getCoreCompetency().getValue()));
     }
 
     @Test
